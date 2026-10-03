@@ -1,0 +1,42 @@
+{
+ "comprobacion_fev1_pct": {
+  "diferencia_mediana": 0.32,
+  "diferencia_maxima": 0.87
+ },
+ "lln_del_cociente": {
+  "mediana": 0.7,
+  "minimo": 0.681,
+  "maximo": 0.722
+ },
+ "controles_por_debajo_del_lln": {
+  "n": 1,
+  "de": 52
+ },
+ "posibles_pre_epoc_por_debajo_del_lln": {
+  "n": 1,
+  "de": 14
+ },
+ "otros_controles_por_debajo_del_lln": {
+  "n": 0,
+  "de": 38
+ },
+ "epoc_por_0_70_pero_no_por_lln": {
+  "n": 0,
+  "de": 28
+ },
+ "fisher_p": 0.2692307692307692,
+ "z_cociente_vs_puntuacion_sin_obstruccion": {
+  "rho": -0.33,
+  "p": 0.016715322242468585
+ },
+ "epoc_paquetes_ano": {
+  "crudo": {
+   "rho": -0.571
+  },
+  "descontando_edad_y_fumar_ahora": {
+   "rho": -0.583,
+   "p": 0.0017734190891186693,
+   "n": 26
+  }
+ }
+}

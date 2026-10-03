@@ -1,0 +1,762 @@
+{
+ "umbral": 0.484807764148096,
+ "controles_con_tc_como_epoc": {
+  "n": 14,
+  "de": 52,
+  "frente_a_los_demas_controles": [
+   {
+    "variable": "Enfisema (z)",
+    "discordantes": 0.98,
+    "n_discordantes": 14,
+    "iguales": -0.307,
+    "n_iguales": 38,
+    "p": 1.9826064869852326e-06,
+    "q": 5.1547768661616046e-05
+   },
+   {
+    "variable": "Vía aérea (z; más es menos árbol)",
+    "discordantes": 0.836,
+    "n_discordantes": 14,
+    "iguales": -0.341,
+    "n_iguales": 38,
+    "p": 2.6906608336948534e-05,
+    "q": 0.00034978590838033094
+   },
+   {
+    "variable": "Calibre central para su pulmón (z; más es más estrecho)",
+    "discordantes": 0.48,
+    "n_discordantes": 14,
+    "iguales": -0.215,
+    "n_iguales": 38,
+    "p": 0.015350104572326297,
+    "q": 0.1330342396268279
+   },
+   {
+    "variable": "FEV1/FVC",
+    "discordantes": 0.745,
+    "n_discordantes": 14,
+    "iguales": 0.778,
+    "n_iguales": 38,
+    "p": 0.02657440936893325,
+    "q": 0.1727336608980661
+   },
+   {
+    "variable": "IMC",
+    "discordantes": 24.246,
+    "n_discordantes": 14,
+    "iguales": 26.811,
+    "n_iguales": 38,
+    "p": 0.10098206687707693,
+    "q": 0.5205765977351523
+   },
+   {
+    "variable": "Paquetes-año",
+    "discordantes": 20.163,
+    "n_discordantes": 13,
+    "iguales": 21.451,
+    "n_iguales": 37,
+    "p": 0.12698575380780688,
+    "q": 0.5205765977351523
+   },
+   {
+    "variable": "CAT",
+    "discordantes": 9.0,
+    "n_discordantes": 14,
+    "iguales": 5.5,
+    "n_iguales": 38,
+    "p": 0.1528558821812565,
+    "q": 0.5205765977351523
+   },
+   {
+    "variable": "FENO",
+    "discordantes": 18.3,
+    "n_discordantes": 14,
+    "iguales": 12.4,
+    "n_iguales": 36,
+    "p": 0.16017741468773916,
+    "q": 0.5205765977351523
+   },
+   {
+    "variable": "Enfisema visual",
+    "discordantes": "29 %",
+    "n_discordantes": 14,
+    "iguales": "11 %",
+    "n_iguales": 37,
+    "p": 0.1922294172062905,
+    "q": 0.5520784685435516
+   },
+   {
+    "variable": "COPD-PS",
+    "discordantes": 3.0,
+    "n_discordantes": 14,
+    "iguales": 2.5,
+    "n_iguales": 38,
+    "p": 0.21233787251675063,
+    "q": 0.5520784685435516
+   },
+   {
+    "variable": "Respuesta al broncodilatador, % del FEV1",
+    "discordantes": 6.516,
+    "n_discordantes": 14,
+    "iguales": 5.004,
+    "n_iguales": 38,
+    "p": 0.24796825432623304,
+    "q": 0.5861067829529145
+   },
+   {
+    "variable": "FEV1, % del predicho",
+    "discordantes": 90.556,
+    "n_discordantes": 14,
+    "iguales": 96.942,
+    "n_iguales": 38,
+    "p": 0.27877774218193263,
+    "q": 0.6040184413941874
+   },
+   {
+    "variable": "DLCO, % del predicho",
+    "discordantes": 79.0,
+    "n_discordantes": 14,
+    "iguales": 74.0,
+    "n_iguales": 38,
+    "p": 0.31652761119764494,
+    "q": 0.605769615393939
+   },
+   {
+    "variable": "Fumaba en la visita 1 y no en la 2",
+    "discordantes": "23 %",
+    "n_discordantes": 13,
+    "iguales": "9 %",
+    "n_iguales": 32,
+    "p": 0.334226144436014,
+    "q": 0.605769615393939
+   },
+   {
+    "variable": "Cambio del FEV1 % a 3,6 años",
+    "discordantes": 3.366,
+    "n_discordantes": 13,
+    "iguales": 2.912,
+    "n_iguales": 32,
+    "p": 0.36070389545994197,
+    "q": 0.605769615393939
+   },
+   {
+    "variable": "Cambio de peso, kg",
+    "discordantes": 1.0,
+    "n_discordantes": 13,
+    "iguales": 0.5,
+    "n_iguales": 32,
+    "p": 0.37278130178088553,
+    "q": 0.605769615393939
+   },
+   {
+    "variable": "FVC, % del predicho",
+    "discordantes": 93.302,
+    "n_discordantes": 14,
+    "iguales": 100.373,
+    "n_iguales": 38,
+    "p": 0.4391550660996466,
+    "q": 0.6716489246229889
+   },
+   {
+    "variable": "Obstrucción en la visita 2",
+    "discordantes": "8 %",
+    "n_discordantes": 13,
+    "iguales": "3 %",
+    "n_iguales": 33,
+    "p": 0.4898550724637681,
+    "q": 0.7075684380032206
+   },
+   {
+    "variable": "Edad",
+    "discordantes": 45.0,
+    "n_discordantes": 14,
+    "iguales": 44.5,
+    "n_iguales": 38,
+    "p": 0.5552362510033262,
+    "q": 0.7256781111340052
+   },
+   {
+    "variable": "Cambio del FEV1/FVC a 3,6 años",
+    "discordantes": 0.003,
+    "n_discordantes": 13,
+    "iguales": -0.003,
+    "n_iguales": 33,
+    "p": 0.5582139316415424,
+    "q": 0.7256781111340052
+   },
+   {
+    "variable": "Volumen pulmonar en la TC, mL",
+    "discordantes": 5422.137,
+    "n_discordantes": 14,
+    "iguales": 5101.616,
+    "n_iguales": 38,
+    "p": 0.657373317675992,
+    "q": 0.813890774265514
+   },
+   {
+    "variable": "Disnea (mMRC)",
+    "discordantes": 0.0,
+    "n_discordantes": 14,
+    "iguales": 0.0,
+    "n_iguales": 38,
+    "p": 0.7985250140834901,
+    "q": 0.9437113802804883
+   },
+   {
+    "variable": "Talla, cm",
+    "discordantes": 169.0,
+    "n_discordantes": 14,
+    "iguales": 167.5,
+    "n_iguales": 38,
+    "p": 0.8931396876521682,
+    "q": 1.0
+   },
+   {
+    "variable": "Mujeres",
+    "discordantes": "50 %",
+    "n_discordantes": 14,
+    "iguales": "53 %",
+    "n_iguales": 38,
+    "p": 1.0,
+    "q": 1.0
+   },
+   {
+    "variable": "Fuman ahora",
+    "discordantes": "79 %",
+    "n_discordantes": 14,
+    "iguales": "76 %",
+    "n_iguales": 38,
+    "p": 1.0,
+    "q": 1.0
+   },
+   {
+    "variable": "Asma",
+    "discordantes": "0 %",
+    "n_discordantes": 14,
+    "iguales": "0 %",
+    "n_iguales": 38,
+    "p": 1.0,
+    "q": 1.0
+   }
+  ]
+ },
+ "epoc_con_tc_como_control": {
+  "n": 2,
+  "de": 28,
+  "frente_a_los_demas_casos": []
+ },
+ "dentro_de_los_controles": {
+  "puntuacion": [
+   {
+    "variable": "Calibre central para su pulmón (z; más es más estrecho)",
+    "rho": 0.371,
+    "p": 0.006742035700114263,
+    "n": 52,
+    "q": 0.11460111458428579
+   },
+   {
+    "variable": "FEV1/FVC",
+    "rho": -0.354,
+    "p": 0.009965314311677026,
+    "n": 52,
+    "q": 0.11460111458428579
+   },
+   {
+    "variable": "Cambio de peso, kg",
+    "rho": 0.268,
+    "p": 0.07544442032218149,
+    "n": 45,
+    "q": 0.4695739934025878
+   },
+   {
+    "variable": "Paquetes-año",
+    "rho": -0.235,
+    "p": 0.10063666546605209,
+    "n": 50,
+    "q": 0.4695739934025878
+   },
+   {
+    "variable": "Cambio del FEV1 % a 3,6 años",
+    "rho": 0.232,
+    "p": 0.12490181055072613,
+    "n": 45,
+    "q": 0.4695739934025878
+   },
+   {
+    "variable": "IMC",
+    "rho": -0.209,
+    "p": 0.13669164917153723,
+    "n": 52,
+    "q": 0.4695739934025878
+   },
+   {
+    "variable": "Respuesta al broncodilatador, % del FEV1",
+    "rho": 0.2,
+    "p": 0.15552030472139117,
+    "n": 52,
+    "q": 0.4695739934025878
+   },
+   {
+    "variable": "FENO",
+    "rho": 0.2,
+    "p": 0.16333008466176968,
+    "n": 50,
+    "q": 0.4695739934025878
+   },
+   {
+    "variable": "DLCO, % del predicho",
+    "rho": 0.151,
+    "p": 0.28659207339063014,
+    "n": 52,
+    "q": 0.7324019653316104
+   },
+   {
+    "variable": "Disnea (mMRC)",
+    "rho": -0.117,
+    "p": 0.40852854147626677,
+    "n": 52,
+    "q": 0.9396156453954136
+   },
+   {
+    "variable": "Cambio del FEV1/FVC a 3,6 años",
+    "rho": 0.084,
+    "p": 0.576941777914132,
+    "n": 46,
+    "q": 0.9990316278845134
+   },
+   {
+    "variable": "Fumaba en la visita 1 y no en la 2",
+    "rho": 0.081,
+    "p": 0.5989482041170238,
+    "n": 45,
+    "q": 0.9990316278845134
+   },
+   {
+    "variable": "Obstrucción en la visita 2",
+    "rho": -0.072,
+    "p": 0.6331692543874144,
+    "n": 46,
+    "q": 0.9990316278845134
+   },
+   {
+    "variable": "COPD-PS",
+    "rho": 0.064,
+    "p": 0.6505518330325749,
+    "n": 52,
+    "q": 0.9990316278845134
+   },
+   {
+    "variable": "FEV1, % del predicho",
+    "rho": -0.064,
+    "p": 0.6528755977201148,
+    "n": 52,
+    "q": 0.9990316278845134
+   },
+   {
+    "variable": "CAT",
+    "rho": 0.056,
+    "p": 0.6949785237457484,
+    "n": 52,
+    "q": 0.9990316278845134
+   },
+   {
+    "variable": "FVC, % del predicho",
+    "rho": 0.029,
+    "p": 0.8357905912321139,
+    "n": 52,
+    "q": 0.9990414484208017
+   },
+   {
+    "variable": "Edad",
+    "rho": -0.024,
+    "p": 0.8681028420790833,
+    "n": 52,
+    "q": 0.9990414484208017
+   },
+   {
+    "variable": "Enfisema visual",
+    "rho": 0.018,
+    "p": 0.8984973941204647,
+    "n": 51,
+    "q": 0.9990414484208017
+   },
+   {
+    "variable": "Talla, cm",
+    "rho": 0.016,
+    "p": 0.9108768186661008,
+    "n": 52,
+    "q": 0.9990414484208017
+   },
+   {
+    "variable": "Mujeres",
+    "rho": 0.014,
+    "p": 0.9209428244498177,
+    "n": 52,
+    "q": 0.9990414484208017
+   },
+   {
+    "variable": "Fuman ahora",
+    "rho": 0.003,
+    "p": 0.9829286217919895,
+    "n": 52,
+    "q": 0.9990414484208017
+   },
+   {
+    "variable": "Volumen pulmonar en la TC, mL",
+    "rho": 0.0,
+    "p": 0.9990414484208016,
+    "n": 52,
+    "q": 0.9990414484208017
+   }
+  ],
+  "via_aerea": [
+   {
+    "variable": "Vía aérea (z; más es menos árbol)",
+    "rho": 1.0,
+    "p": 0.0,
+    "n": 52,
+    "q": 0.0
+   },
+   {
+    "variable": "Calibre central para su pulmón (z; más es más estrecho)",
+    "rho": 0.389,
+    "p": 0.004392276188067016,
+    "n": 52,
+    "q": 0.0549034523508377
+   },
+   {
+    "variable": "Cambio de peso, kg",
+    "rho": 0.343,
+    "p": 0.020926546460964465,
+    "n": 45,
+    "q": 0.17438788717470388
+   },
+   {
+    "variable": "FEV1/FVC",
+    "rho": -0.286,
+    "p": 0.03965102316062515,
+    "n": 52,
+    "q": 0.2478188947539072
+   },
+   {
+    "variable": "Enfisema (z)",
+    "rho": 0.264,
+    "p": 0.05811694372890411,
+    "n": 52,
+    "q": 0.29058471864452057
+   },
+   {
+    "variable": "Paquetes-año",
+    "rho": -0.199,
+    "p": 0.16520344960614303,
+    "n": 50,
+    "q": 0.6883477066922626
+   },
+   {
+    "variable": "Obstrucción en la visita 2",
+    "rho": -0.161,
+    "p": 0.2863549049000431,
+    "n": 46,
+    "q": 0.7686934721445857
+   },
+   {
+    "variable": "FENO",
+    "rho": 0.152,
+    "p": 0.29281688155546903,
+    "n": 50,
+    "q": 0.7686934721445857
+   },
+   {
+    "variable": "Enfisema visual",
+    "rho": -0.147,
+    "p": 0.3049186764866638,
+    "n": 51,
+    "q": 0.7686934721445857
+   },
+   {
+    "variable": "Respuesta al broncodilatador, % del FEV1",
+    "rho": 0.144,
+    "p": 0.3074773888578343,
+    "n": 52,
+    "q": 0.7686934721445857
+   },
+   {
+    "variable": "FVC, % del predicho",
+    "rho": 0.122,
+    "p": 0.38723668942253014,
+    "n": 52,
+    "q": 0.8800833850512049
+   },
+   {
+    "variable": "Cambio del FEV1 % a 3,6 años",
+    "rho": 0.101,
+    "p": 0.5105944939453085,
+    "n": 45,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Disnea (mMRC)",
+    "rho": -0.082,
+    "p": 0.5646436802164685,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "DLCO, % del predicho",
+    "rho": 0.08,
+    "p": 0.5735443186774067,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "CAT",
+    "rho": -0.079,
+    "p": 0.5787301481061783,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Cambio del FEV1/FVC a 3,6 años",
+    "rho": 0.056,
+    "p": 0.713784725607964,
+    "n": 46,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Edad",
+    "rho": 0.042,
+    "p": 0.769720298003562,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "IMC",
+    "rho": -0.041,
+    "p": 0.7736886848447778,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "COPD-PS",
+    "rho": -0.041,
+    "p": 0.7741847788916457,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "FEV1, % del predicho",
+    "rho": 0.038,
+    "p": 0.7873094208830658,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Talla, cm",
+    "rho": 0.025,
+    "p": 0.8576623005664984,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Fumaba en la visita 1 y no en la 2",
+    "rho": 0.025,
+    "p": 0.8696472826233107,
+    "n": 45,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Mujeres",
+    "rho": -0.022,
+    "p": 0.8780899068787383,
+    "n": 52,
+    "q": 0.9544455509551504
+   },
+   {
+    "variable": "Fuman ahora",
+    "rho": -0.009,
+    "p": 0.948816163712485,
+    "n": 52,
+    "q": 0.9851432795936581
+   },
+   {
+    "variable": "Volumen pulmonar en la TC, mL",
+    "rho": -0.003,
+    "p": 0.9851432795936581,
+    "n": 52,
+    "q": 0.9851432795936581
+   }
+  ]
+ },
+ "dentro_de_los_casos": {
+  "puntuacion": [
+   {
+    "variable": "Disnea (mMRC)",
+    "rho": 0.69,
+    "p": 4.8355255736969945e-05,
+    "n": 28,
+    "q": 0.0011605261376872787
+   },
+   {
+    "variable": "FEV1/FVC",
+    "rho": -0.664,
+    "p": 0.00011710023789321782,
+    "n": 28,
+    "q": 0.001405202854718614
+   },
+   {
+    "variable": "DLCO, % del predicho",
+    "rho": -0.637,
+    "p": 0.0002681522088641587,
+    "n": 28,
+    "q": 0.0021452176709132694
+   },
+   {
+    "variable": "Enfisema visual",
+    "rho": 0.616,
+    "p": 0.00048142193320419084,
+    "n": 28,
+    "q": 0.002888531599225145
+   },
+   {
+    "variable": "Paquetes-año",
+    "rho": -0.571,
+    "p": 0.0023353309066062567,
+    "n": 26,
+    "q": 0.011209588351710032
+   },
+   {
+    "variable": "FEV1, % del predicho",
+    "rho": -0.527,
+    "p": 0.003995959734707336,
+    "n": 28,
+    "q": 0.015983838938829344
+   },
+   {
+    "variable": "Mujeres",
+    "rho": 0.375,
+    "p": 0.049111034160564566,
+    "n": 28,
+    "q": 0.16838068855050708
+   },
+   {
+    "variable": "IMC",
+    "rho": -0.325,
+    "p": 0.09195712798992,
+    "n": 28,
+    "q": 0.22512808739814827
+   },
+   {
+    "variable": "CAT",
+    "rho": 0.324,
+    "p": 0.09309985029955917,
+    "n": 28,
+    "q": 0.22512808739814827
+   },
+   {
+    "variable": "COPD-PS",
+    "rho": 0.323,
+    "p": 0.09380336974922844,
+    "n": 28,
+    "q": 0.22512808739814827
+   },
+   {
+    "variable": "Respuesta al broncodilatador, % del FEV1",
+    "rho": 0.303,
+    "p": 0.11744164685364648,
+    "n": 28,
+    "q": 0.25623632040795596
+   },
+   {
+    "variable": "Obstrucción en la visita 2",
+    "rho": 0.256,
+    "p": 0.20712861483235184,
+    "n": 26,
+    "q": 0.383195653491745
+   },
+   {
+    "variable": "Fumaba en la visita 1 y no en la 2",
+    "rho": -0.256,
+    "p": 0.20756431230802858,
+    "n": 26,
+    "q": 0.383195653491745
+   },
+   {
+    "variable": "Asma",
+    "rho": 0.225,
+    "p": 0.26813740282123877,
+    "n": 26,
+    "q": 0.45384191889278125
+   },
+   {
+    "variable": "Talla, cm",
+    "rho": -0.207,
+    "p": 0.29012657333240843,
+    "n": 28,
+    "q": 0.45384191889278125
+   },
+   {
+    "variable": "Cambio del FEV1/FVC a 3,6 años",
+    "rho": -0.21,
+    "p": 0.30256127926185417,
+    "n": 26,
+    "q": 0.45384191889278125
+   },
+   {
+    "variable": "FVC, % del predicho",
+    "rho": -0.17,
+    "p": 0.3864782519912971,
+    "n": 28,
+    "q": 0.5456163557524194
+   },
+   {
+    "variable": "Edad",
+    "rho": 0.147,
+    "p": 0.4555868859530327,
+    "n": 28,
+    "q": 0.5912139536811357
+   },
+   {
+    "variable": "Fuman ahora",
+    "rho": -0.143,
+    "p": 0.46804437999756576,
+    "n": 28,
+    "q": 0.5912139536811357
+   },
+   {
+    "variable": "Cambio del FEV1 % a 3,6 años",
+    "rho": -0.135,
+    "p": 0.5107029807105486,
+    "n": 26,
+    "q": 0.6128435768526584
+   },
+   {
+    "variable": "Volumen pulmonar en la TC, mL",
+    "rho": 0.116,
+    "p": 0.5565261502249992,
+    "n": 28,
+    "q": 0.6360298859714276
+   },
+   {
+    "variable": "Cambio de peso, kg",
+    "rho": 0.103,
+    "p": 0.6154417602466138,
+    "n": 26,
+    "q": 0.6713910111781242
+   },
+   {
+    "variable": "FENO",
+    "rho": 0.083,
+    "p": 0.6864453274068418,
+    "n": 26,
+    "q": 0.7162907764245305
+   },
+   {
+    "variable": "Calibre central para su pulmón (z; más es más estrecho)",
+    "rho": 0.054,
+    "p": 0.7841921785462467,
+    "n": 28,
+    "q": 0.7841921785462467
+   }
+  ]
+ }
+}

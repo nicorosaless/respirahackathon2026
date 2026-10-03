@@ -1,0 +1,51 @@
+# Entorno para MareNostrum 5. Allí no hay pip: todo lo que pueda hacer falta va aquí.
+# torch con CUDA 12.1: funciona con drivers NVIDIA >= 525, más antiguos que los que pide cu124 o cu13.
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+
+# Imagen
+monai
+lungmask
+TotalSegmentator
+SimpleITK
+pydicom
+nibabel
+scikit-image
+tifffile
+antspyx
+timm
+lighter-zoo
+huggingface-hub
+
+# Tablas y formatos clínicos (Excel, SPSS, R)
+numpy
+pandas
+pyarrow
+openpyxl
+pyreadstat
+pyreadr
+
+# Estadística e integración
+scipy
+scikit-learn
+statsmodels
+lifelines
+umap-learn
+xgboost
+lightgbm
+shap
+mofapy2
+snfpy
+neuroHarmonize
+networkx
+
+# Figuras, app y exploración
+matplotlib
+seaborn
+plotly
+streamlit
+jupyterlab
+ipykernel
+tqdm
+pytest

@@ -1,0 +1,25 @@
+# Configuración de la app MAPS. Streamlit la lee por estar junto a maps_app.py.
+
+[browser]
+# Sin telemetría: la app no puede hacer ninguna petición fuera de la máquina.
+gatherUsageStats = false
+
+[server]
+headless = true
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+# Blanco dominante y negro. El dorado de AstraZeneca no es el color de los controles:
+# queda reservado para el daño, y lo pone app/maps_ui.py.
+primaryColor = "#000000"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f8f8f8"
+textColor = "#000000"
+borderColor = "#d2d2d2"
+# Fuentes del sistema: la app no puede pedir fuentes web.
+font = "'Helvetica Neue', Helvetica, Arial, sans-serif"
+baseRadius = "2px"
+buttonRadius = "8px"

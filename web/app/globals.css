@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+/* Un solo color con significado: el naranja es daño. Todo lo demás es tinta sobre papel. */
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-papel: #fbfaf7;
+  --color-fondo: #f3f1ec;
+  --color-tinta: #16161a;
+  --color-tinta-2: #55555e;
+  --color-tinta-3: #8e8e96;
+  --color-linea: #e8e6e1;
+  --color-linea-2: #d8d5ce;
+  --color-dano: #f6821f;
+  --color-dano-tinta: #b4540a;
+  --color-dano-suave: #fef1e4;
+  --color-control: #a3a3ab;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-papel);
+  color: var(--color-tinta);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "tnum" 1, "ss01" 1;
+}
+
+/* En la capa de componentes, para que una utilidad de Tailwind pueda ajustar un caso concreto. */
+@layer components {
+  /* Botones de píldora. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    padding: 0 1.125rem;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background-color 0.15s,
+      border-color 0.15s,
+      color 0.15s,
+      box-shadow 0.15s,
+      transform 0.15s;
+  }
+  .btn:focus-visible {
+    outline: 2px solid var(--color-dano);
+    outline-offset: 2px;
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .btn-tinta {
+    background: var(--color-tinta);
+    color: #fff;
+  }
+  .btn-tinta:hover {
+    background: #2c2c33;
+  }
+  .btn-dano {
+    background: var(--color-dano);
+    color: #fff;
+    box-shadow: 0 1px 0 rgb(180 84 10 / 0.35);
+  }
+  .btn-dano:hover {
+    background: #e87410;
+  }
+  .btn-linea {
+    background: #fff;
+    border-color: var(--color-linea-2);
+    color: var(--color-tinta);
+  }
+  .btn-linea:hover {
+    border-color: var(--color-tinta);
+  }
+  .btn-linea[aria-pressed="true"],
+  .btn-linea[aria-current="page"] {
+    background: var(--color-tinta);
+    border-color: var(--color-tinta);
+    color: #fff;
+  }
+  .btn-s {
+    height: 2rem;
+    padding: 0 0.875rem;
+    font-size: 0.8125rem;
+  }
+
+  .tarjeta {
+    background: #fff;
+    border: 1px solid var(--color-linea);
+    border-radius: 1rem;
+  }
+
+  /* La presentación: un lienzo 16:9 que se mide a sí mismo. Dentro, todo va en cqw. */
+  .lienzo {
+    width: min(100vw, calc(100vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    container-type: size;
+  }
+}

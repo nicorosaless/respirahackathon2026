@@ -1,0 +1,974 @@
+{
+ "sujetos": 80,
+ "epoc": 28,
+ "controles": 52,
+ "recuperados_de_la_otra_reconstruccion": 3,
+ "vueltas": 5,
+ "repeticiones": 10,
+ "acuerdo_minimo": 0.9,
+ "referencias": {
+  "todos los controles": 52,
+  "controles lejos de la obstrucción": 33
+ },
+ "resultados": [
+  {
+   "medida": "via_longitud_mm",
+   "referencia": "todos los controles",
+   "rho": -0.72,
+   "rho_dt": 0.01,
+   "rho_controles": -0.334,
+   "rho_controles_dt": 0.022,
+   "auc": 0.911,
+   "auc_dt": 0.005,
+   "rho_media": -0.726,
+   "rho_ic95": [
+    -0.834,
+    -0.566
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.339,
+   "rho_controles_ic95": [
+    -0.613,
+    -0.04
+   ],
+   "rho_controles_p": 0.015699215039248038,
+   "sin_puntuacion": 0,
+   "icc": 0.98,
+   "sensibilidad_youden": 0.821,
+   "especificidad_youden": 0.746,
+   "inestabilidad_youden": 0.096,
+   "sensibilidad_normalidad": 0.543,
+   "especificidad_normalidad": 0.963,
+   "inestabilidad_normalidad": 0.046
+  },
+  {
+   "medida": "via_longitud_fina_mm",
+   "referencia": "todos los controles",
+   "rho": -0.717,
+   "rho_dt": 0.018,
+   "rho_controles": -0.397,
+   "rho_controles_dt": 0.026,
+   "auc": 0.893,
+   "auc_dt": 0.011,
+   "rho_media": -0.725,
+   "rho_ic95": [
+    -0.832,
+    -0.566
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.406,
+   "rho_controles_ic95": [
+    -0.656,
+    -0.122
+   ],
+   "rho_controles_p": 0.0031998400079996,
+   "sin_puntuacion": 0,
+   "icc": 0.969,
+   "sensibilidad_youden": 0.807,
+   "especificidad_youden": 0.74,
+   "inestabilidad_youden": 0.082,
+   "sensibilidad_normalidad": 0.486,
+   "especificidad_normalidad": 0.983,
+   "inestabilidad_normalidad": 0.037,
+   "mejora_rho": -0.0,
+   "mejora_rho_ic95": [
+    -0.055,
+    0.054
+   ],
+   "mejora_rho_controles": 0.067,
+   "mejora_rho_controles_ic95": [
+    -0.068,
+    0.203
+   ]
+  },
+  {
+   "medida": "via_fraccion_fina",
+   "referencia": "todos los controles",
+   "rho": -0.557,
+   "rho_dt": 0.028,
+   "rho_controles": -0.372,
+   "rho_controles_dt": 0.039,
+   "auc": 0.762,
+   "auc_dt": 0.017,
+   "rho_media": -0.562,
+   "rho_ic95": [
+    -0.725,
+    -0.353
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.372,
+   "rho_controles_ic95": [
+    -0.623,
+    -0.094
+   ],
+   "rho_controles_p": 0.007749612519374031,
+   "sin_puntuacion": 0,
+   "icc": 0.929,
+   "sensibilidad_youden": 0.661,
+   "especificidad_youden": 0.706,
+   "inestabilidad_youden": 0.117,
+   "sensibilidad_normalidad": 0.396,
+   "especificidad_normalidad": 0.948,
+   "inestabilidad_normalidad": 0.05,
+   "mejora_rho": -0.164,
+   "mejora_rho_ic95": [
+    -0.327,
+    -0.009
+   ],
+   "mejora_rho_controles": 0.034,
+   "mejora_rho_controles_ic95": [
+    -0.218,
+    0.281
+   ]
+  },
+  {
+   "medida": "via_extremos",
+   "referencia": "todos los controles",
+   "rho": -0.726,
+   "rho_dt": 0.011,
+   "rho_controles": -0.37,
+   "rho_controles_dt": 0.029,
+   "auc": 0.902,
+   "auc_dt": 0.007,
+   "rho_media": -0.733,
+   "rho_ic95": [
+    -0.836,
+    -0.586
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.378,
+   "rho_controles_ic95": [
+    -0.63,
+    -0.067
+   ],
+   "rho_controles_p": 0.0066996650167491624,
+   "sin_puntuacion": 0,
+   "icc": 0.979,
+   "sensibilidad_youden": 0.846,
+   "especificidad_youden": 0.731,
+   "inestabilidad_youden": 0.081,
+   "sensibilidad_normalidad": 0.593,
+   "especificidad_normalidad": 0.94,
+   "inestabilidad_normalidad": 0.051,
+   "mejora_rho": 0.007,
+   "mejora_rho_ic95": [
+    -0.024,
+    0.041
+   ],
+   "mejora_rho_controles": 0.04,
+   "mejora_rho_controles_ic95": [
+    -0.027,
+    0.104
+   ]
+  },
+  {
+   "medida": "via_ramas",
+   "referencia": "todos los controles",
+   "rho": -0.723,
+   "rho_dt": 0.011,
+   "rho_controles": -0.36,
+   "rho_controles_dt": 0.028,
+   "auc": 0.902,
+   "auc_dt": 0.008,
+   "rho_media": -0.732,
+   "rho_ic95": [
+    -0.834,
+    -0.58
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.367,
+   "rho_controles_ic95": [
+    -0.609,
+    -0.073
+   ],
+   "rho_controles_p": 0.008649567521623918,
+   "sin_puntuacion": 0,
+   "icc": 0.979,
+   "sensibilidad_youden": 0.836,
+   "especificidad_youden": 0.744,
+   "inestabilidad_youden": 0.079,
+   "sensibilidad_normalidad": 0.575,
+   "especificidad_normalidad": 0.948,
+   "inestabilidad_normalidad": 0.045,
+   "mejora_rho": 0.006,
+   "mejora_rho_ic95": [
+    -0.021,
+    0.035
+   ],
+   "mejora_rho_controles": 0.028,
+   "mejora_rho_controles_ic95": [
+    -0.029,
+    0.086
+   ]
+  },
+  {
+   "medida": "via_longitud_lobar_mm",
+   "referencia": "todos los controles",
+   "rho": -0.717,
+   "rho_dt": 0.009,
+   "rho_controles": -0.335,
+   "rho_controles_dt": 0.019,
+   "auc": 0.907,
+   "auc_dt": 0.005,
+   "rho_media": -0.724,
+   "rho_ic95": [
+    -0.826,
+    -0.578
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.341,
+   "rho_controles_ic95": [
+    -0.596,
+    -0.034
+   ],
+   "rho_controles_p": 0.013749312534373281,
+   "sin_puntuacion": 0,
+   "icc": 0.981,
+   "sensibilidad_youden": 0.807,
+   "especificidad_youden": 0.742,
+   "inestabilidad_youden": 0.104,
+   "sensibilidad_normalidad": 0.518,
+   "especificidad_normalidad": 0.967,
+   "inestabilidad_normalidad": 0.042,
+   "mejora_rho": -0.001,
+   "mejora_rho_ic95": [
+    -0.014,
+    0.011
+   ],
+   "mejora_rho_controles": 0.002,
+   "mejora_rho_controles_ic95": [
+    -0.022,
+    0.029
+   ]
+  },
+  {
+   "medida": "via gruesa",
+   "referencia": "todos los controles",
+   "rho": -0.555,
+   "rho_dt": 0.026,
+   "rho_controles": -0.096,
+   "rho_controles_dt": 0.019,
+   "auc": 0.844,
+   "auc_dt": 0.018,
+   "rho_media": -0.559,
+   "rho_ic95": [
+    -0.711,
+    -0.356
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.102,
+   "rho_controles_ic95": [
+    -0.391,
+    0.198
+   ],
+   "rho_controles_p": 0.4710764461776911,
+   "sin_puntuacion": 0,
+   "icc": 0.967,
+   "sensibilidad_youden": 0.621,
+   "especificidad_youden": 0.788,
+   "inestabilidad_youden": 0.147,
+   "sensibilidad_normalidad": 0.529,
+   "especificidad_normalidad": 0.946,
+   "inestabilidad_normalidad": 0.034,
+   "mejora_rho": -0.167,
+   "mejora_rho_ic95": [
+    -0.301,
+    -0.054
+   ],
+   "mejora_rho_controles": -0.236,
+   "mejora_rho_controles_ic95": [
+    -0.421,
+    0.114
+   ]
+  },
+  {
+   "medida": "solo vía aérea",
+   "referencia": "todos los controles",
+   "rho": -0.666,
+   "rho_dt": 0.019,
+   "rho_controles": -0.287,
+   "rho_controles_dt": 0.022,
+   "auc": 0.915,
+   "auc_dt": 0.011,
+   "rho_media": -0.672,
+   "rho_ic95": [
+    -0.771,
+    -0.531
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.28,
+   "rho_controles_ic95": [
+    -0.54,
+    0.007
+   ],
+   "rho_controles_p": 0.044947752612369385,
+   "sin_puntuacion": 0,
+   "icc": 0.97,
+   "sensibilidad_youden": 0.8,
+   "especificidad_youden": 0.817,
+   "inestabilidad_youden": 0.103,
+   "sensibilidad_normalidad": 0.414,
+   "especificidad_normalidad": 0.988,
+   "inestabilidad_normalidad": 0.052,
+   "mejora_rho": -0.054,
+   "mejora_rho_ic95": [
+    -0.164,
+    0.057
+   ],
+   "mejora_rho_controles": -0.058,
+   "mejora_rho_controles_ic95": [
+    -0.208,
+    0.086
+   ]
+  },
+  {
+   "medida": "solo enfisema",
+   "referencia": "todos los controles",
+   "rho": -0.461,
+   "rho_dt": 0.017,
+   "rho_controles": -0.286,
+   "rho_controles_dt": 0.043,
+   "auc": 0.72,
+   "auc_dt": 0.009,
+   "rho_media": -0.457,
+   "rho_ic95": [
+    -0.642,
+    -0.237
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.292,
+   "rho_controles_ic95": [
+    -0.553,
+    0.015
+   ],
+   "rho_controles_p": 0.03434828258587071,
+   "sin_puntuacion": 0,
+   "icc": 0.972,
+   "sensibilidad_youden": 0.45,
+   "especificidad_youden": 0.913,
+   "inestabilidad_youden": 0.065,
+   "sensibilidad_normalidad": 0.514,
+   "especificidad_normalidad": 0.867,
+   "inestabilidad_normalidad": 0.042,
+   "mejora_rho": -0.269,
+   "mejora_rho_ic95": [
+    -0.445,
+    -0.115
+   ],
+   "mejora_rho_controles": -0.047,
+   "mejora_rho_controles_ic95": [
+    -0.273,
+    0.183
+   ]
+  },
+  {
+   "medida": "solo vía fina",
+   "referencia": "todos los controles",
+   "rho": -0.656,
+   "rho_dt": 0.027,
+   "rho_controles": -0.354,
+   "rho_controles_dt": 0.025,
+   "auc": 0.884,
+   "auc_dt": 0.017,
+   "rho_media": -0.659,
+   "rho_ic95": [
+    -0.767,
+    -0.51
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.343,
+   "rho_controles_ic95": [
+    -0.573,
+    -0.056
+   ],
+   "rho_controles_p": 0.012199390030498474,
+   "sin_puntuacion": 0,
+   "icc": 0.934,
+   "sensibilidad_youden": 0.846,
+   "especificidad_youden": 0.723,
+   "inestabilidad_youden": 0.097,
+   "sensibilidad_normalidad": 0.382,
+   "especificidad_normalidad": 0.971,
+   "inestabilidad_normalidad": 0.075,
+   "mejora_rho": -0.066,
+   "mejora_rho_ic95": [
+    -0.206,
+    0.06
+   ],
+   "mejora_rho_controles": 0.004,
+   "mejora_rho_controles_ic95": [
+    -0.2,
+    0.211
+   ]
+  },
+  {
+   "medida": "solo vía gruesa",
+   "referencia": "todos los controles",
+   "rho": -0.299,
+   "rho_dt": 0.031,
+   "rho_controles": 0.052,
+   "rho_controles_dt": 0.026,
+   "auc": 0.747,
+   "auc_dt": 0.023,
+   "rho_media": -0.302,
+   "rho_ic95": [
+    -0.491,
+    -0.097
+   ],
+   "rho_p": 0.006499675016249188,
+   "rho_controles_media": 0.05,
+   "rho_controles_ic95": [
+    -0.247,
+    0.341
+   ],
+   "rho_controles_p": 0.7216639168041598,
+   "sin_puntuacion": 0,
+   "icc": 0.913,
+   "sensibilidad_youden": 0.586,
+   "especificidad_youden": 0.64,
+   "inestabilidad_youden": 0.209,
+   "sensibilidad_normalidad": 0.325,
+   "especificidad_normalidad": 0.952,
+   "inestabilidad_normalidad": 0.06,
+   "mejora_rho": -0.424,
+   "mejora_rho_ic95": [
+    -0.642,
+    -0.21
+   ],
+   "mejora_rho_controles": -0.288,
+   "mejora_rho_controles_ic95": [
+    -0.528,
+    0.203
+   ]
+  },
+  {
+   "medida": "via_longitud_mm",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.731,
+   "rho_dt": 0.019,
+   "rho_controles": -0.375,
+   "rho_controles_dt": 0.03,
+   "auc": 0.913,
+   "auc_dt": 0.01,
+   "rho_media": -0.738,
+   "rho_ic95": [
+    -0.838,
+    -0.591
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.367,
+   "rho_controles_ic95": [
+    -0.624,
+    -0.088
+   ],
+   "rho_controles_p": 0.007249637518124094,
+   "sin_puntuacion": 9,
+   "icc": 0.984,
+   "sensibilidad_youden": 0.824,
+   "especificidad_youden": 0.78,
+   "inestabilidad_youden": 0.102,
+   "sensibilidad_normalidad": 0.608,
+   "especificidad_normalidad": 0.914,
+   "inestabilidad_normalidad": 0.086,
+   "mejora_rho": 0.012,
+   "mejora_rho_ic95": [
+    -0.024,
+    0.05
+   ],
+   "mejora_rho_controles": 0.028,
+   "mejora_rho_controles_ic95": [
+    -0.058,
+    0.119
+   ]
+  },
+  {
+   "medida": "via_longitud_fina_mm",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.708,
+   "rho_dt": 0.027,
+   "rho_controles": -0.424,
+   "rho_controles_dt": 0.038,
+   "auc": 0.879,
+   "auc_dt": 0.015,
+   "rho_media": -0.718,
+   "rho_ic95": [
+    -0.826,
+    -0.568
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.434,
+   "rho_controles_ic95": [
+    -0.652,
+    -0.144
+   ],
+   "rho_controles_p": 0.0012499375031248437,
+   "sin_puntuacion": 9,
+   "icc": 0.973,
+   "sensibilidad_youden": 0.748,
+   "especificidad_youden": 0.768,
+   "inestabilidad_youden": 0.141,
+   "sensibilidad_normalidad": 0.547,
+   "especificidad_normalidad": 0.949,
+   "inestabilidad_normalidad": 0.092,
+   "mejora_rho": -0.007,
+   "mejora_rho_ic95": [
+    -0.083,
+    0.063
+   ],
+   "mejora_rho_controles": 0.096,
+   "mejora_rho_controles_ic95": [
+    -0.054,
+    0.239
+   ]
+  },
+  {
+   "medida": "via_fraccion_fina",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.523,
+   "rho_dt": 0.032,
+   "rho_controles": -0.327,
+   "rho_controles_dt": 0.057,
+   "auc": 0.75,
+   "auc_dt": 0.018,
+   "rho_media": -0.529,
+   "rho_ic95": [
+    -0.702,
+    -0.313
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.333,
+   "rho_controles_ic95": [
+    -0.593,
+    -0.046
+   ],
+   "rho_controles_p": 0.016449177541122944,
+   "sin_puntuacion": 9,
+   "icc": 0.948,
+   "sensibilidad_youden": 0.576,
+   "especificidad_youden": 0.791,
+   "inestabilidad_youden": 0.163,
+   "sensibilidad_normalidad": 0.399,
+   "especificidad_normalidad": 0.953,
+   "inestabilidad_normalidad": 0.062,
+   "mejora_rho": -0.197,
+   "mejora_rho_ic95": [
+    -0.37,
+    -0.038
+   ],
+   "mejora_rho_controles": -0.006,
+   "mejora_rho_controles_ic95": [
+    -0.257,
+    0.253
+   ]
+  },
+  {
+   "medida": "via_extremos",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.732,
+   "rho_dt": 0.019,
+   "rho_controles": -0.397,
+   "rho_controles_dt": 0.029,
+   "auc": 0.903,
+   "auc_dt": 0.011,
+   "rho_media": -0.736,
+   "rho_ic95": [
+    -0.835,
+    -0.582
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.389,
+   "rho_controles_ic95": [
+    -0.642,
+    -0.104
+   ],
+   "rho_controles_p": 0.005649717514124294,
+   "sin_puntuacion": 9,
+   "icc": 0.983,
+   "sensibilidad_youden": 0.759,
+   "especificidad_youden": 0.805,
+   "inestabilidad_youden": 0.124,
+   "sensibilidad_normalidad": 0.669,
+   "especificidad_normalidad": 0.891,
+   "inestabilidad_normalidad": 0.092,
+   "mejora_rho": 0.01,
+   "mejora_rho_ic95": [
+    -0.039,
+    0.059
+   ],
+   "mejora_rho_controles": 0.05,
+   "mejora_rho_controles_ic95": [
+    -0.048,
+    0.153
+   ]
+  },
+  {
+   "medida": "via_ramas",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.726,
+   "rho_dt": 0.018,
+   "rho_controles": -0.381,
+   "rho_controles_dt": 0.027,
+   "auc": 0.902,
+   "auc_dt": 0.011,
+   "rho_media": -0.728,
+   "rho_ic95": [
+    -0.831,
+    -0.572
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.366,
+   "rho_controles_ic95": [
+    -0.626,
+    -0.063
+   ],
+   "rho_controles_p": 0.007949602519874007,
+   "sin_puntuacion": 9,
+   "icc": 0.983,
+   "sensibilidad_youden": 0.781,
+   "especificidad_youden": 0.803,
+   "inestabilidad_youden": 0.122,
+   "sensibilidad_normalidad": 0.669,
+   "especificidad_normalidad": 0.899,
+   "inestabilidad_normalidad": 0.087,
+   "mejora_rho": 0.003,
+   "mejora_rho_ic95": [
+    -0.046,
+    0.049
+   ],
+   "mejora_rho_controles": 0.027,
+   "mejora_rho_controles_ic95": [
+    -0.062,
+    0.121
+   ]
+  },
+  {
+   "medida": "via_longitud_lobar_mm",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.718,
+   "rho_dt": 0.018,
+   "rho_controles": -0.375,
+   "rho_controles_dt": 0.028,
+   "auc": 0.9,
+   "auc_dt": 0.008,
+   "rho_media": -0.733,
+   "rho_ic95": [
+    -0.834,
+    -0.588
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.385,
+   "rho_controles_ic95": [
+    -0.633,
+    -0.057
+   ],
+   "rho_controles_p": 0.006249687515624219,
+   "sin_puntuacion": 9,
+   "icc": 0.985,
+   "sensibilidad_youden": 0.82,
+   "especificidad_youden": 0.754,
+   "inestabilidad_youden": 0.103,
+   "sensibilidad_normalidad": 0.626,
+   "especificidad_normalidad": 0.901,
+   "inestabilidad_normalidad": 0.08,
+   "mejora_rho": 0.008,
+   "mejora_rho_ic95": [
+    -0.037,
+    0.048
+   ],
+   "mejora_rho_controles": 0.046,
+   "mejora_rho_controles_ic95": [
+    -0.051,
+    0.154
+   ]
+  },
+  {
+   "medida": "via gruesa",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.557,
+   "rho_dt": 0.051,
+   "rho_controles": -0.145,
+   "rho_controles_dt": 0.053,
+   "auc": 0.83,
+   "auc_dt": 0.029,
+   "rho_media": -0.574,
+   "rho_ic95": [
+    -0.715,
+    -0.392
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.137,
+   "rho_controles_ic95": [
+    -0.406,
+    0.166
+   ],
+   "rho_controles_p": 0.3333333333333333,
+   "sin_puntuacion": 9,
+   "icc": 0.972,
+   "sensibilidad_youden": 0.629,
+   "especificidad_youden": 0.801,
+   "inestabilidad_youden": 0.131,
+   "sensibilidad_normalidad": 0.601,
+   "especificidad_normalidad": 0.879,
+   "inestabilidad_normalidad": 0.056,
+   "mejora_rho": -0.152,
+   "mejora_rho_ic95": [
+    -0.284,
+    -0.035
+   ],
+   "mejora_rho_controles": -0.202,
+   "mejora_rho_controles_ic95": [
+    -0.42,
+    0.103
+   ]
+  },
+  {
+   "medida": "solo vía aérea",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.696,
+   "rho_dt": 0.031,
+   "rho_controles": -0.319,
+   "rho_controles_dt": 0.031,
+   "auc": 0.924,
+   "auc_dt": 0.017,
+   "rho_media": -0.71,
+   "rho_ic95": [
+    -0.799,
+    -0.582
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.318,
+   "rho_controles_ic95": [
+    -0.536,
+    -0.044
+   ],
+   "rho_controles_p": 0.020748962551872405,
+   "sin_puntuacion": 9,
+   "icc": 0.976,
+   "sensibilidad_youden": 0.82,
+   "especificidad_youden": 0.877,
+   "inestabilidad_youden": 0.089,
+   "sensibilidad_normalidad": 0.572,
+   "especificidad_normalidad": 0.949,
+   "inestabilidad_normalidad": 0.094,
+   "mejora_rho": -0.015,
+   "mejora_rho_ic95": [
+    -0.101,
+    0.075
+   ],
+   "mejora_rho_controles": -0.021,
+   "mejora_rho_controles_ic95": [
+    -0.178,
+    0.143
+   ]
+  },
+  {
+   "medida": "solo enfisema",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.479,
+   "rho_dt": 0.027,
+   "rho_controles": -0.298,
+   "rho_controles_dt": 0.039,
+   "auc": 0.729,
+   "auc_dt": 0.015,
+   "rho_media": -0.481,
+   "rho_ic95": [
+    -0.664,
+    -0.266
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.314,
+   "rho_controles_ic95": [
+    -0.56,
+    -0.013
+   ],
+   "rho_controles_p": 0.02414879256037198,
+   "sin_puntuacion": 9,
+   "icc": 0.974,
+   "sensibilidad_youden": 0.514,
+   "especificidad_youden": 0.85,
+   "inestabilidad_youden": 0.106,
+   "sensibilidad_normalidad": 0.59,
+   "especificidad_normalidad": 0.84,
+   "inestabilidad_normalidad": 0.067,
+   "mejora_rho": -0.244,
+   "mejora_rho_ic95": [
+    -0.416,
+    -0.088
+   ],
+   "mejora_rho_controles": -0.024,
+   "mejora_rho_controles_ic95": [
+    -0.249,
+    0.214
+   ]
+  },
+  {
+   "medida": "solo vía fina",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.654,
+   "rho_dt": 0.039,
+   "rho_controles": -0.351,
+   "rho_controles_dt": 0.044,
+   "auc": 0.878,
+   "auc_dt": 0.022,
+   "rho_media": -0.678,
+   "rho_ic95": [
+    -0.781,
+    -0.525
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.356,
+   "rho_controles_ic95": [
+    -0.588,
+    -0.076
+   ],
+   "rho_controles_p": 0.00974951252437378,
+   "sin_puntuacion": 9,
+   "icc": 0.942,
+   "sensibilidad_youden": 0.77,
+   "especificidad_youden": 0.799,
+   "inestabilidad_youden": 0.124,
+   "sensibilidad_normalidad": 0.475,
+   "especificidad_normalidad": 0.961,
+   "inestabilidad_normalidad": 0.093,
+   "mejora_rho": -0.047,
+   "mejora_rho_ic95": [
+    -0.18,
+    0.079
+   ],
+   "mejora_rho_controles": 0.017,
+   "mejora_rho_controles_ic95": [
+    -0.211,
+    0.236
+   ]
+  },
+  {
+   "medida": "solo vía gruesa",
+   "referencia": "controles lejos de la obstrucción",
+   "rho": -0.296,
+   "rho_dt": 0.049,
+   "rho_controles": 0.039,
+   "rho_controles_dt": 0.035,
+   "auc": 0.731,
+   "auc_dt": 0.033,
+   "rho_media": -0.304,
+   "rho_ic95": [
+    -0.484,
+    -0.103
+   ],
+   "rho_p": 0.006899655017249137,
+   "rho_controles_media": 0.057,
+   "rho_controles_ic95": [
+    -0.224,
+    0.335
+   ],
+   "rho_controles_p": 0.6928153592320384,
+   "sin_puntuacion": 9,
+   "icc": 0.922,
+   "sensibilidad_youden": 0.565,
+   "especificidad_youden": 0.782,
+   "inestabilidad_youden": 0.116,
+   "sensibilidad_normalidad": 0.273,
+   "especificidad_normalidad": 0.942,
+   "inestabilidad_normalidad": 0.089,
+   "mejora_rho": -0.422,
+   "mejora_rho_ic95": [
+    -0.616,
+    -0.219
+   ],
+   "mejora_rho_controles": -0.282,
+   "mejora_rho_controles_ic95": [
+    -0.537,
+    0.164
+   ]
+  },
+  {
+   "medida": "elegido en cada vuelta",
+   "referencia": "",
+   "rho": -0.708,
+   "rho_dt": 0.023,
+   "rho_controles": -0.348,
+   "rho_controles_dt": 0.027,
+   "auc": 0.898,
+   "auc_dt": 0.016,
+   "rho_media": -0.723,
+   "rho_ic95": [
+    -0.834,
+    -0.568
+   ],
+   "rho_p": 4.999750012499375e-05,
+   "rho_controles_media": -0.351,
+   "rho_controles_ic95": [
+    -0.605,
+    -0.029
+   ],
+   "rho_controles_p": 0.011099445027748612,
+   "sin_puntuacion": 0,
+   "icc": 0.981,
+   "sensibilidad_youden": 0.771,
+   "especificidad_youden": 0.773,
+   "inestabilidad_youden": 0.131,
+   "sensibilidad_normalidad": 0.589,
+   "especificidad_normalidad": 0.929,
+   "inestabilidad_normalidad": 0.083,
+   "mejora_rho": -0.003,
+   "mejora_rho_ic95": [
+    -0.045,
+    0.033
+   ],
+   "mejora_rho_controles": 0.012,
+   "mejora_rho_controles_ic95": [
+    -0.066,
+    0.08
+   ]
+  }
+ ],
+ "comparaciones": [
+  {
+   "primera": "via_longitud_fina_mm",
+   "segunda": "via gruesa",
+   "todos": {
+    "diferencia": 0.166,
+    "ic95": [
+     0.02,
+     0.342
+    ]
+   },
+   "controles": {
+    "diferencia": 0.303,
+    "ic95": [
+     -0.053,
+     0.508
+    ]
+   }
+  },
+  {
+   "primera": "solo vía fina",
+   "segunda": "solo vía gruesa",
+   "todos": {
+    "diferencia": 0.358,
+    "ic95": [
+     0.096,
+     0.6
+    ]
+   },
+   "controles": {
+    "diferencia": 0.292,
+    "ic95": [
+     -0.103,
+     0.494
+    ]
+   }
+  }
+ ],
+ "elegido_en_cada_vuelta": {
+  "via_extremos / controles lejos de la obstrucción": 11,
+  "via_longitud_mm / controles lejos de la obstrucción": 7,
+  "via_ramas / todos los controles": 7,
+  "via_longitud_fina_mm / todos los controles": 6,
+  "via_ramas / controles lejos de la obstrucción": 6,
+  "via_extremos / todos los controles": 5,
+  "via_longitud_lobar_mm / controles lejos de la obstrucción": 3,
+  "via_longitud_fina_mm / controles lejos de la obstrucción": 3,
+  "via_longitud_mm / todos los controles": 2
+ }
+}

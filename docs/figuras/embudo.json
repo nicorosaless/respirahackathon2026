@@ -1,0 +1,286 @@
+{
+ "criterios": {
+  "acuerdo_minimo": 0.9,
+  "q_maximo": 0.05,
+  "p_descontando_maximo": 0.05
+ },
+ "medidas": 27,
+ "estables": 13,
+ "estables_y_asociadas": 10,
+ "elegidas": [
+  "via_extremos",
+  "laa950_smooth"
+ ],
+ "pasos": [
+  {
+   "medida": "via_extremos",
+   "nombre": "Extremos del árbol",
+   "icc": 0.918,
+   "rho": -0.709,
+   "p": 1.812028577900285e-13,
+   "q": 2.4462385801653847e-11,
+   "resultado": "dentro"
+  },
+  {
+   "medida": "via_ramas",
+   "nombre": "Ramas de vía aérea",
+   "icc": 0.918,
+   "rho": -0.701,
+   "p": 4.370286056101484e-13,
+   "q": 2.9499430878685015e-11,
+   "rho_descontando": 0.048,
+   "p_descontando": 0.6733547867207136,
+   "parecido_a_las_elegidas": 0.994,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "via_ramas_por_litro",
+   "nombre": "Ramas por litro",
+   "icc": 0.952,
+   "rho": -0.685,
+   "p": 2.5423660120083295e-12,
+   "q": 1.1440647054037483e-10,
+   "rho_descontando": 0.034,
+   "p_descontando": 0.7632650684557198,
+   "parecido_a_las_elegidas": 0.973,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "via_longitud_lobar_mm",
+   "nombre": "Longitud de vía aérea en el lóbulo",
+   "icc": 0.939,
+   "rho": -0.678,
+   "p": 4.9764076128615115e-12,
+   "q": 1.6795375693407602e-10,
+   "rho_descontando": 0.052,
+   "p_descontando": 0.6444302196461337,
+   "parecido_a_las_elegidas": 0.969,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "via_longitud_mm",
+   "nombre": "Longitud de vía aérea",
+   "icc": 0.938,
+   "rho": -0.673,
+   "p": 8.334377271947582e-12,
+   "q": 2.2502818634258468e-10,
+   "rho_descontando": 0.065,
+   "p_descontando": 0.5653800258127318,
+   "parecido_a_las_elegidas": 0.965,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "via_longitud_conectada_mm",
+   "nombre": "Longitud de vía aérea conectada",
+   "icc": 0.941,
+   "rho": -0.671,
+   "p": 1.0153956208168127e-11,
+   "q": 2.2846401468378287e-10,
+   "rho_descontando": 0.093,
+   "p_descontando": 0.411132005352996,
+   "parecido_a_las_elegidas": 0.969,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "via_longitud_fina_mm",
+   "nombre": "Longitud de vía aérea fina",
+   "icc": 0.885,
+   "rho": -0.651,
+   "p": 5.992167231630848e-11,
+   "q": 1.155632251814521e-09,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "vasos_por_litro",
+   "nombre": "Volumen vascular",
+   "icc": 0.932,
+   "rho": -0.455,
+   "p": 2.226030357293178e-05,
+   "q": 0.0003412972609048187,
+   "rho_descontando": -0.192,
+   "p_descontando": 0.08765598573085104,
+   "parecido_a_las_elegidas": 0.473,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "laa950_smooth",
+   "nombre": "%LAA-950 suavizado",
+   "icc": 0.926,
+   "rho": -0.455,
+   "p": 2.2753150726987912e-05,
+   "q": 0.0003412972609048187,
+   "rho_descontando": -0.343,
+   "p_descontando": 0.0018661921903366267,
+   "parecido_a_las_elegidas": 0.318,
+   "resultado": "dentro"
+  },
+  {
+   "medida": "agrupamiento",
+   "nombre": "Agrupamiento del enfisema",
+   "icc": 0.856,
+   "rho": -0.416,
+   "p": 0.00015006419438218525,
+   "q": 0.0018416969310540918,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "laa950",
+   "nombre": "%LAA-950",
+   "icc": 0.184,
+   "rho": -0.398,
+   "p": 0.00025580916968835084,
+   "q": 0.0028778531589939466,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "via_fraccion_fina",
+   "nombre": "Fracción de vía aérea fina",
+   "icc": 0.745,
+   "rho": -0.344,
+   "p": 0.0017793109271188017,
+   "q": 0.011438427388620867,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "via_disanapsia",
+   "nombre": "Disanapsia, aproximada",
+   "icc": 0.75,
+   "rho": -0.327,
+   "p": 0.0030255396509348362,
+   "q": 0.017758602298965344,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "via_calibre_central_mm",
+   "nombre": "Calibre central",
+   "icc": 0.808,
+   "rho": -0.305,
+   "p": 0.00591947986993494,
+   "q": 0.0295973993496747,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "vasos_bv5_tbv",
+   "nombre": "Vasos pequeños",
+   "icc": 0.671,
+   "rho": 0.303,
+   "p": 0.006324725499682573,
+   "q": 0.030407588592780622,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "via_longitud_gruesa_mm",
+   "nombre": "Longitud de vía aérea gruesa",
+   "icc": 0.936,
+   "rho": -0.302,
+   "p": 0.006532000512523245,
+   "q": 0.030407588592780622,
+   "rho_descontando": 0.053,
+   "p_descontando": 0.6407742341369345,
+   "parecido_a_las_elegidas": 0.483,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "arterias_bv5_tbv",
+   "nombre": "Arterias pequeñas",
+   "icc": 0.706,
+   "rho": 0.286,
+   "p": 0.010220051249130814,
+   "q": 0.04311584120727062,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "masa_g",
+   "nombre": "Masa",
+   "icc": 0.944,
+   "rho": -0.274,
+   "p": 0.013737488376678547,
+   "q": 0.04880423502241062,
+   "rho_descontando": -0.105,
+   "p_descontando": 0.35494619208994194,
+   "parecido_a_las_elegidas": 0.524,
+   "resultado": "fuera: redundante, dice lo mismo que las elegidas"
+  },
+  {
+   "medida": "laa910",
+   "nombre": "%LAA-910",
+   "icc": 0.447,
+   "rho": -0.184,
+   "p": 0.10173774364802601,
+   "q": 0.2693057920094806,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "densidad_g_l",
+   "nombre": "Densidad",
+   "icc": 0.992,
+   "rho": -0.173,
+   "p": 0.12406271326262445,
+   "q": 0.31600879793310005,
+   "resultado": "fuera: no se asocia con el FEV1/FVC"
+  },
+  {
+   "medida": "via_grosor_pared_mm",
+   "nombre": "Grosor de pared, estimado",
+   "icc": 0.66,
+   "rho": -0.153,
+   "p": 0.17610935518894796,
+   "q": 0.41710110439487674,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "mld",
+   "nombre": "Densidad media",
+   "icc": 0.991,
+   "rho": -0.145,
+   "p": 0.1999523106080216,
+   "q": 0.44251740872267076,
+   "resultado": "fuera: no se asocia con el FEV1/FVC"
+  },
+  {
+   "medida": "perc15",
+   "nombre": "Perc15",
+   "icc": 0.234,
+   "rho": -0.096,
+   "p": 0.39501768203565135,
+   "q": 0.605993034941056,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "haa",
+   "nombre": "Alta atenuación",
+   "icc": 0.644,
+   "rho": -0.088,
+   "p": 0.43518444363002035,
+   "q": 0.6456032954950851,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "via_pi10_mm",
+   "nombre": "Pi10, aproximado",
+   "icc": 0.622,
+   "rho": -0.083,
+   "p": 0.4668311868258173,
+   "q": 0.6776581744245735,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  },
+  {
+   "medida": "volumen_ml",
+   "nombre": "Volumen",
+   "icc": 0.978,
+   "rho": 0.066,
+   "p": 0.5580832438466007,
+   "q": 0.7534123791929109,
+   "resultado": "fuera: no se asocia con el FEV1/FVC"
+  },
+  {
+   "medida": "via_pared_pct",
+   "nombre": "Área de pared, aproximada",
+   "icc": 0.66,
+   "rho": -0.039,
+   "p": 0.7287215463545835,
+   "q": 0.828912370282012,
+   "resultado": "fuera: inestable entre reconstrucciones"
+  }
+ ]
+}

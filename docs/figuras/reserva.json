@@ -1,0 +1,133 @@
+{
+ "cuando": "2026-10-02 16:05",
+ "particion": "reserva",
+ "sujetos": 15,
+ "sin_puntuacion": 0,
+ "epoc": 6,
+ "medidas": [
+  "laa950_smooth",
+  "via_longitud_mm"
+ ],
+ "umbral_dano": 0.37633938709500536,
+ "modelo": {
+  "modelo.pkl": "c14db8eeae6b8b86",
+  "modelo.json": "89275e2d65ed3fdb"
+ },
+ "separa_epoc": {
+  "auc": 0.852,
+  "ic95": [
+   0.611,
+   1.0
+  ],
+  "n": 15,
+  "casos": 6
+ },
+ "fev1_fvc": {
+  "rho": -0.807,
+  "p": 0.00027524427069541943,
+  "n": 15
+ },
+ "sensibilidad": {
+  "aciertos": 6,
+  "de": 6,
+  "valor": 1.0,
+  "ic95": [
+   0.541,
+   1.0
+  ]
+ },
+ "especificidad": {
+  "aciertos": 5,
+  "de": 9,
+  "valor": 0.556,
+  "ic95": [
+   0.212,
+   0.863
+  ]
+ },
+ "clases": {
+  "control": 4,
+  "pre-EPOC": 5,
+  "EPOC": 6
+ },
+ "calibracion_controles": {
+  "n": 9,
+  "puntuacion": {
+   "mediana": 0.015,
+   "dispersion": 1.121
+  },
+  "laa950_smooth": {
+   "mediana": -0.207,
+   "dispersion": 0.725
+  },
+  "via_longitud_mm": {
+   "mediana": 0.358,
+   "dispersion": 1.16
+  }
+ },
+ "limite_de_normalidad": {
+  "umbral": 1.286,
+  "sensibilidad": {
+   "aciertos": 3,
+   "de": 6,
+   "valor": 0.5,
+   "ic95": [
+    0.118,
+    0.882
+   ]
+  },
+  "especificidad": {
+   "aciertos": 9,
+   "de": 9,
+   "valor": 1.0,
+   "ic95": [
+    0.664,
+    1.0
+   ]
+  }
+ },
+ "anade_a_la_clinica": [
+  {
+   "hasta": "clínica",
+   "rho": 0.061,
+   "p": 0.8298120954425187,
+   "n": 15
+  },
+  {
+   "hasta": "TC, enfisema y vía aérea",
+   "rho": 0.889,
+   "p": 9.192974758842262e-06,
+   "n": 15
+  }
+ ],
+ "otra_reconstruccion": {
+  "sujetos": 15,
+  "icc": 0.991,
+  "separa_epoc": {
+   "auc": 0.889,
+   "ic95": [
+    0.667,
+    1.0
+   ],
+   "n": 15,
+   "casos": 6
+  },
+  "misma_decision_de_dano": {
+   "aciertos": 15,
+   "de": 15,
+   "valor": 1.0,
+   "ic95": [
+    0.782,
+    1.0
+   ]
+  }
+ },
+ "criterios": {
+  "separa_epoc": true,
+  "sigue_el_cociente": true,
+  "controles_centrados": true,
+  "controles_con_dispersion_normal": true,
+  "fracaso": false,
+  "estable_entre_reconstrucciones": true
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "sujetos": 80,
+ "con_la_puntuacion_del_modelo": 0.824,
+ "fev1_fvc": {
+  "rho": -0.555,
+  "p": 9.062334863488849e-08
+ },
+ "fev1_fvc_sin_obstruccion": {
+  "rho": -0.189,
+  "p": 0.17858169181983316,
+  "n": 52
+ },
+ "separa_0_70": 0.83,
+ "dos_grupos_por_la_tc": {
+  "umbral_de_puntuacion": 0.397,
+  "por_encima": 26,
+  "por_debajo": 54,
+  "fev1_fvc_mediana_por_encima": 0.624,
+  "fev1_fvc_mediana_por_debajo": 0.755,
+  "con_obstruccion_por_encima": "19 de 28",
+  "sin_obstruccion_por_debajo": "45 de 52"
+ },
+ "por_corte_del_cociente": [
+  {
+   "corte": 0.6,
+   "auc": 0.857,
+   "por_debajo": 14
+  },
+  {
+   "corte": 0.61,
+   "auc": 0.864,
+   "por_debajo": 15
+  },
+  {
+   "corte": 0.62,
+   "auc": 0.864,
+   "por_debajo": 15
+  },
+  {
+   "corte": 0.63,
+   "auc": 0.838,
+   "por_debajo": 18
+  },
+  {
+   "corte": 0.64,
+   "auc": 0.849,
+   "por_debajo": 20
+  },
+  {
+   "corte": 0.65,
+   "auc": 0.856,
+   "por_debajo": 21
+  },
+  {
+   "corte": 0.66,
+   "auc": 0.856,
+   "por_debajo": 21
+  },
+  {
+   "corte": 0.67,
+   "auc": 0.856,
+   "por_debajo": 24
+  },
+  {
+   "corte": 0.68,
+   "auc": 0.832,
+   "por_debajo": 26
+  },
+  {
+   "corte": 0.69,
+   "auc": 0.829,
+   "por_debajo": 27
+  },
+  {
+   "corte": 0.7,
+   "auc": 0.83,
+   "por_debajo": 28
+  },
+  {
+   "corte": 0.71,
+   "auc": 0.826,
+   "por_debajo": 32
+  },
+  {
+   "corte": 0.72,
+   "auc": 0.768,
+   "por_debajo": 35
+  },
+  {
+   "corte": 0.73,
+   "auc": 0.765,
+   "por_debajo": 36
+  },
+  {
+   "corte": 0.74,
+   "auc": 0.745,
+   "por_debajo": 41
+  },
+  {
+   "corte": 0.75,
+   "auc": 0.734,
+   "por_debajo": 43
+  },
+  {
+   "corte": 0.76,
+   "auc": 0.699,
+   "por_debajo": 51
+  },
+  {
+   "corte": 0.77,
+   "auc": 0.707,
+   "por_debajo": 52
+  },
+  {
+   "corte": 0.78,
+   "auc": 0.728,
+   "por_debajo": 58
+  },
+  {
+   "corte": 0.79,
+   "auc": 0.742,
+   "por_debajo": 60
+  },
+  {
+   "corte": 0.8,
+   "auc": 0.665,
+   "por_debajo": 66
+  }
+ ],
+ "corte_que_mejor_separa": 0.61,
+ "empieza_a_subir_en": {
+  "fev1_fvc": 0.83,
+  "ic95": [
+   0.71475,
+   0.85
+  ]
+ },
+ "coinciden_con_la_obstruccion": "64 de 80"
+}

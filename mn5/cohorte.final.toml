@@ -1,0 +1,56 @@
+# Cohorte EARLY COPD del reto con TODOS los sujetos que tienen TC utilizable (docs/protocolo-mejora.md).
+# La tabla sale de scripts/prepare_early.py. El modelo que se probó en la reserva está en mn5/cohorte.early.toml.
+cohorte = "outputs/cohorte_v4"
+
+[clinica]
+tabla = "outputs/clinica_early.csv"
+id = "random_id"
+
+[normativo]
+# Referencia: todos los controles. Incluye controles con daño, y por eso la escala del z es robusta.
+# Cada control recibe el z de un modelo ajustado con todos los demás.
+referencia = "caso_v1 == 0"
+covariables = ["edat_round_v1", "altura_v1", "volumen_pulmon_ml"]
+# El tabaquismo activo sube la densidad; el kVp va ligado al escáner y al protocolo.
+categoricas = ["sexo", "fuma", "kvp"]
+
+[puntuacion]
+# Dos medidas, las dos estables al cambiar el kernel de reconstrucción (ICC de 0,95 y 0,94):
+# cuánto enfisema hay y cuánto árbol bronquial se ve. Añadir más medidas no mejoró nada en desarrollo.
+# El enfisema se compara en logaritmo (ver LOG_MEASURES en src/maps/measures.py).
+medidas = ["laa950_smooth", "via_longitud_mm"]
+
+[clasificacion]
+# EPOC: cociente < 0,70. Posible pre-EPOC: sin obstrucción y con la TC parecida a la de la EPOC.
+# Sin criterio funcional: las investigadoras del reto no consideran el PRISm (FEV1 < 80 % con el
+# cociente conservado) una buena definición de pre-EPOC. La DLCO tampoco entra.
+cociente = "fev1_fvc_post_v1"
+caso = "caso_v1"
+
+[analisis]
+# Las comprobaciones se hacen con todos los sujetos.
+filtro = "caso_v1 >= 0"
+
+[evidencia]
+# Lo que pide el reto: asociar la TC con la limitación al flujo aéreo. La escalera dice cuánto
+# añade la TC a lo que ya se sabe del sujeto sin ninguna prueba.
+objetivo = "fev1_fvc_post_v1"
+objetivo_nombre = "FEV1/FVC posbroncodilatador"
+tarea = "regression"
+controles_negativos = ["sexo", "fuma", "kvp", "modelo"]
+permutaciones = 500
+
+[evidencia.bloques]
+"clínica" = ["edat_round_v1", "sexo", "altura_v1", "paquetes_año_v1", "fuma"]
+"TC, enfisema y vía aérea" = "tc:laa950_smooth,via_longitud_mm"
+
+[molecular]
+# El paso "Connect". No hay datos moleculares en la carpeta del reto: el único biomarcador es FENO.
+# Con una matriz de metilación solo cambian `tabla`, `id` y `rasgos` (o se quita `rasgos` para usar todas las columnas).
+tabla = "outputs/clinica_early.csv"
+id = "random_id"
+rasgos = ["FENO_v1"]
+logaritmo = true
+exposiciones = ["puntuacion_dano", "tc:laa950_smooth", "tc:via_longitud_mm", "fev1_fvc_post_v1"]
+# Fumar baja el FENO y el asma lo sube.
+covariables = ["edat_round_v1", "sexo", "altura_v1", "fuma", "asma_num_v1"]

@@ -1,0 +1,6 @@
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
+minimumReleaseAgeExclude:
+  - motion-dom@13.5.0
+  - motion-utils@13.5.0

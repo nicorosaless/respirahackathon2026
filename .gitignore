@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Datos y pesos: no se redistribuyen (licencias de los datasets) ni se versionan.
+data/
+# Salvo la cohorte simulada de la web, hecha sobre TC públicas de LIDC-IDRI: así se compila sin nada externo.
+!web/public/data/
+weights/
+outputs/
+
+# Entorno autónomo para MareNostrum (varios GiB)
+bundle/
+*.tar
+*.tar.gz
+
+# Lo que exige el kit de la hackathon: en el repositorio va el código, nunca los datos.
+datos/
+*.csv
+*.parquet
+*.h5
+*.npy
+*.npz
+*.dcm
+*.nii
+*.nii.gz
+.env

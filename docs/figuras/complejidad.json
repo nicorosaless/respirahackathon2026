@@ -1,0 +1,197 @@
+{
+ "sujetos": 80,
+ "repeticiones": 5,
+ "modelos": [
+  {
+   "modelo": "1 medida",
+   "auc": 0.916,
+   "auc_dt": 0.007,
+   "rho_fev1_fvc": -0.666,
+   "rho_sin_obstruccion": -0.282,
+   "icc": 0.972,
+   "medidas": [
+    "via_longitud_mm"
+   ]
+  },
+  {
+   "modelo": "2 medidas",
+   "auc": 0.909,
+   "auc_dt": 0.003,
+   "rho_fev1_fvc": -0.715,
+   "rho_sin_obstruccion": -0.323,
+   "icc": 0.981,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth"
+   ]
+  },
+  {
+   "modelo": "3 medidas",
+   "auc": 0.893,
+   "auc_dt": 0.001,
+   "rho_fev1_fvc": -0.702,
+   "rho_sin_obstruccion": -0.371,
+   "icc": 0.958,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth",
+    "via_disanapsia"
+   ]
+  },
+  {
+   "modelo": "4 medidas",
+   "auc": 0.896,
+   "auc_dt": 0.009,
+   "rho_fev1_fvc": -0.678,
+   "rho_sin_obstruccion": -0.278,
+   "icc": 0.961,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth",
+    "via_disanapsia",
+    "via_grosor_pared_mm"
+   ]
+  },
+  {
+   "modelo": "5 medidas",
+   "auc": 0.885,
+   "auc_dt": 0.008,
+   "rho_fev1_fvc": -0.677,
+   "rho_sin_obstruccion": -0.306,
+   "icc": 0.953,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth",
+    "via_disanapsia",
+    "via_grosor_pared_mm",
+    "vasos_por_litro"
+   ]
+  },
+  {
+   "modelo": "6 medidas",
+   "auc": 0.879,
+   "auc_dt": 0.009,
+   "rho_fev1_fvc": -0.675,
+   "rho_sin_obstruccion": -0.303,
+   "icc": 0.966,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth",
+    "via_disanapsia",
+    "via_grosor_pared_mm",
+    "vasos_por_litro",
+    "agrupamiento"
+   ]
+  },
+  {
+   "modelo": "7 medidas",
+   "auc": 0.873,
+   "auc_dt": 0.012,
+   "rho_fev1_fvc": -0.648,
+   "rho_sin_obstruccion": -0.242,
+   "icc": 0.935,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth",
+    "via_disanapsia",
+    "via_grosor_pared_mm",
+    "vasos_por_litro",
+    "agrupamiento",
+    "via_pi10_mm"
+   ]
+  },
+  {
+   "modelo": "8 medidas",
+   "auc": 0.848,
+   "auc_dt": 0.015,
+   "rho_fev1_fvc": -0.631,
+   "rho_sin_obstruccion": -0.274,
+   "icc": 0.771,
+   "medidas": [
+    "via_longitud_mm",
+    "laa950_smooth",
+    "via_disanapsia",
+    "via_grosor_pared_mm",
+    "vasos_por_litro",
+    "agrupamiento",
+    "via_pi10_mm",
+    "perc15"
+   ]
+  },
+  {
+   "modelo": "logística con todas las medidas de TC",
+   "auc": 0.846,
+   "auc_dt": 0.055,
+   "rho_fev1_fvc": -0.605,
+   "rho_sin_obstruccion": -0.263,
+   "icc": 0.427,
+   "medidas": null
+  },
+  {
+   "modelo": "clínica sola",
+   "auc": 0.625,
+   "auc_dt": 0.021,
+   "rho_fev1_fvc": -0.232,
+   "rho_sin_obstruccion": -0.17,
+   "icc": null,
+   "medidas": null
+  },
+  {
+   "modelo": "clínica y las dos medidas de TC",
+   "auc": 0.946,
+   "auc_dt": 0.013,
+   "rho_fev1_fvc": -0.751,
+   "rho_sin_obstruccion": -0.351,
+   "icc": 0.986,
+   "medidas": null
+  },
+  {
+   "modelo": "clínica ampliada sola",
+   "auc": 0.76,
+   "auc_dt": 0.023,
+   "rho_fev1_fvc": -0.514,
+   "rho_sin_obstruccion": -0.323,
+   "icc": null,
+   "medidas": null
+  },
+  {
+   "modelo": "clínica ampliada y las dos medidas de TC",
+   "auc": 0.901,
+   "auc_dt": 0.037,
+   "rho_fev1_fvc": -0.69,
+   "rho_sin_obstruccion": -0.352,
+   "icc": 0.989,
+   "medidas": null
+  }
+ ],
+ "caida_acelerada_del_fev1": {
+  "30 mL al año, todos": {
+   "con_seguimiento": 71,
+   "caida_acelerada": 23,
+   "auc": 0.628,
+   "p_mann_whitney": 0.08429353269641165,
+   "rho_con_la_caida": -0.013
+  },
+  "30 mL al año, sin obstrucción": {
+   "con_seguimiento": 45,
+   "caida_acelerada": 10,
+   "auc": 0.429,
+   "p_mann_whitney": 0.5035763926994044,
+   "rho_con_la_caida": -0.265
+  },
+  "60 mL al año, todos": {
+   "con_seguimiento": 71,
+   "caida_acelerada": 14,
+   "auc": 0.638,
+   "p_mann_whitney": 0.11354101668247454,
+   "rho_con_la_caida": -0.013
+  },
+  "60 mL al año, sin obstrucción": {
+   "con_seguimiento": 45,
+   "caida_acelerada": 5,
+   "auc": 0.505,
+   "p_mann_whitney": 0.9860422554693685,
+   "rho_con_la_caida": -0.265
+  }
+ }
+}

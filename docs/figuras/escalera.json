@@ -1,0 +1,75 @@
+{
+  "objetivo": "FEV1/FVC posbroncodilatador",
+  "metrica_nombre": "Spearman",
+  "escalera": [
+    {
+      "escalon": "Clínica sola",
+      "n_variables": 5,
+      "metrica": 0.1656586967,
+      "ic95_inf": -0.0607485147,
+      "ic95_sup": 0.3719793468,
+      "incremento": null,
+      "incremento_ic95_inf": null,
+      "incremento_ic95_sup": null,
+      "p_permutacion": 0.0359281437
+    },
+    {
+      "escalon": "+ TC, enfisema y vía aérea",
+      "n_variables": 12,
+      "metrica": 0.760806376,
+      "ic95_inf": 0.6151619801,
+      "ic95_sup": 0.8558389923,
+      "incremento": 0.5951476793,
+      "incremento_ic95_inf": 0.3664795396,
+      "incremento_ic95_sup": 0.8191600246,
+      "p_permutacion": 0.001996008
+    }
+  ],
+  "controles_negativos": [
+    {
+      "variable": "sexo",
+      "n": 80,
+      "niveles": [
+        "hombre",
+        "mujer"
+      ],
+      "auc": 0.5071919949968731,
+      "ic95_inf": 0.3844585815857509,
+      "ic95_sup": 0.6393897243107768
+    },
+    {
+      "variable": "fuma",
+      "n": 80,
+      "niveles": [
+        "fuma",
+        "no fuma"
+      ],
+      "auc": 0.6011904761904762,
+      "ic95_inf": 0.4515336794454818,
+      "ic95_sup": 0.7429548589341692
+    },
+    {
+      "variable": "kvp",
+      "n": 80,
+      "niveles": [
+        80,
+        100,
+        120
+      ],
+      "p_kruskal": 0.2585873627581687,
+      "eta2": 0.009156407318172357
+    },
+    {
+      "variable": "modelo",
+      "n": 80,
+      "niveles": [
+        "BrightSpeed",
+        "LightSpeed VCT",
+        "Optima CT660",
+        "Revolution Apex"
+      ],
+      "p_kruskal": 0.1678810197138444,
+      "eta2": 0.027027126640129944
+    }
+  ]
+}

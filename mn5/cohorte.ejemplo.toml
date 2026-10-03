@@ -1,0 +1,32 @@
+# Copia este fichero a mn5/cohorte.toml y ajusta los nombres de columna cuando se vean los datos.
+cohorte = "outputs/cohorte"
+
+[clinica]
+tabla = "<datos del reto>/clinica.csv"   # csv, tsv, xlsx, sav, rds o parquet
+id = "ID"                          # columna cuyo valor coincide con el subject_id de las TC
+
+[normativo]
+# Quién es de referencia, como expresión de pandas.query sobre la tabla de sujetos.
+referencia = "grupo == 'control'"
+# De qué depende una medida en una persona sana. volumen_pulmon_ml corrige el nivel de inspiración.
+covariables = ["edad", "talla", "volumen_pulmon_ml"]
+categoricas = ["sexo", "kernel"]   # kernel, fabricante y grosor_mm salen de las cabeceras DICOM
+
+[puntuacion]
+# Una medida por familia: densidad, patrón del enfisema, vasos y vía aérea.
+medidas = ["perc15", "agrupamiento", "vasos_bv5_tbv", "via_ramas_por_litro", "via_disanapsia"]
+
+[evidencia]
+# El objetivo no debe ser la espirometría ni salir de la TC: DLCO, síntomas o un biomarcador.
+objetivo = "dlco_pct"
+objetivo_nombre = "DLCO, % del valor predicho"
+tarea = "regression"               # "regression" o "classification" (dos clases)
+controles_negativos = ["sexo", "fabricante"]
+permutaciones = 200
+
+# Bloques en el orden de la escalera. Una lista son columnas de la tabla de sujetos;
+# "tc:..." son medidas de TC, en z y por región.
+[evidencia.bloques]
+"clínica" = ["edad", "sexo", "paquetes_ano"]
+"densitometría" = "tc:perc15,laa950,laa910"
+"vasos y vía aérea" = "tc:agrupamiento,vasos_bv5_tbv,via_ramas_por_litro,via_disanapsia"
