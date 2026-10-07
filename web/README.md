@@ -5,7 +5,7 @@ que se construyen por pasos; antes de las conclusiones se abre la aplicación
 (Inferencia, persona a persona) y desde ella se vuelve a las conclusiones.
 Detrás hay un anexo con las preguntas del jurado y una diapositiva por respuesta.
 
-Publicada en <https://nicorosaless.github.io/maps/>.
+Publicada en <https://nicorosaless.github.io/maps/slides/>.
 
 Los sujetos son simulados sobre cuatro TC públicas de LIDC-IDRI. Las cifras son
 las reales: los agregados de `docs/figuras/`, que resume `docs/cifras.md`.
@@ -14,10 +14,10 @@ las reales: los agregados de `docs/figuras/`, que resume `docs/cifras.md`.
 
 ```bash
 pnpm install
-pnpm dev                                   # http://localhost:3000
+pnpm dev                                        # http://localhost:3000
 pnpm test
-pnpm build                                 # sitio estático en out/
-NEXT_PUBLIC_BASE_PATH=/maps pnpm build     # para servirlo en /maps/
+pnpm build                                      # sitio estático en out/
+NEXT_PUBLIC_BASE_PATH=/maps/slides pnpm build   # para servirlo en /maps/slides/
 ```
 
 `out/` no necesita Node: lo sirve cualquier servidor de ficheros. Con la flecha

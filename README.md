@@ -1,9 +1,9 @@
 # MAPS: mapa del daño pulmonar en la EPOC precoz
 
-**Proyecto ganador del reto 3 de la [Respira Hackathon](https://respira-hackathon.devpost.com)**
+**Proyecto ganador del reto de EPOC precoz de la [Respira Hackathon](https://respira-hackathon.devpost.com)**
 (Barcelona, 1 a 3 de octubre de 2026).
 
-**[Ver las diapositivas y la aplicación →](https://nicorosaless.github.io/maps/)**
+**[Ver las diapositivas y la aplicación →](https://nicorosaless.github.io/maps/slides/)**
 
 La EPOC se diagnostica con una espirometría, y la definición de lo que viene
 antes, la pre-EPOC, sigue en debate. MAPS mide en la TC dos cosas que dan lo
@@ -94,9 +94,9 @@ cohorte simulada y las TC públicas van en `web/public/`.
 ```bash
 cd web
 pnpm install
-pnpm dev                                   # http://localhost:3000
-pnpm build                                 # sitio estático en out/
-NEXT_PUBLIC_BASE_PATH=/maps pnpm build     # para publicarlo en una subcarpeta
+pnpm dev                                        # http://localhost:3000
+pnpm build                                      # sitio estático en out/
+NEXT_PUBLIC_BASE_PATH=/maps/slides pnpm build   # para publicarlo en una subcarpeta
 ```
 
 `web/scripts/make_fixture.py` regenera esa cohorte simulada a partir de las TC
