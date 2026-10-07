@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   // `plataforma/index.html` en vez de `plataforma.html`: cualquier servidor de ficheros lo sirve.
   trailingSlash: true,
   devIndicators: false,
-  // Para publicarla en una subcarpeta: `NEXT_PUBLIC_BASE_PATH=/maps pnpm build`.
+  // Para publicarla en una subcarpeta: `NEXT_PUBLIC_BASE_PATH=/maps/slides pnpm build`.
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || undefined,
 };
 
